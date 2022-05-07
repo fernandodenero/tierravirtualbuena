@@ -22,10 +22,10 @@
 
 
   <!-- Prueba de Imagen -->
-  <img id="earth" src="./assets/earth.png" ></a-asset-item>
+  <img id="portal" src="./assets/portal.png" ></a-asset-item>
 
   <!-- Modelo 3D -->
-  <a-asset-item id="arbol" src="./assets/arbolsolo.gltf" ></a-asset-item>
+  <a-asset-item id="planetanillo" src="./assets/planetanillo.gltf" ></a-asset-item>
  
   <!-- Modelo 3D 2-->
   <a-asset-item id="letras" src="./assets/letras.gltf" ></a-asset-item>
@@ -37,25 +37,25 @@
 </assets>
 
 <!-- Sky -->
-<a-sky color="#997d45"></a-sky>
+<a-sky color="#2e4053"></a-sky>
        
 <!-- METER UN GIF -->
 <a-entity geometry="primitive:plane;width:" position="7.931 4.01 -12.56" rotation="0 -28 0" scale="11.68 6.67 1" material="shader:gif;src:url(./assets/match.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
 
 <!-- Imagen -->
-<a-image src="#earth"  position="14.956 7.687 14.551" scale="20 15 10" rotation="0 -147.8 0"></a-image>
+<a-image src="#´portal"  position="14.956 7.687 14.551" scale="20 15 10" rotation="0 -147.8 0"></a-image>
    
 <!-- Modelo 3D 1 -->
-<a-entity gltf-model="#arbol" scale="2 2 2" position="-11.393 2 -8.948" rotation="0 -52.35 0"></a-entity>
+<a-entity gltf-model="#planetanillo" scale="2 2 2" position="-11.393 2 -8.948" rotation="0 -52.35 0"></a-entity>
 
 <!-- Modelo 3D 2 -->
 <a-entity gltf-model="#letras" scale="5 5 5" position="-35.04 -5.994 1" rotation="0 35 -5.06"></a-entity>
 
 <!-- Audio -->
-<a-sound src="src: url(./assets/audio.mp3)" autoplay="true" loop="true" position="0 2 2" scale="1 1 1" rotation="0 0 0"></a-sound>
+<a-sound src="src: url(./assets/marduk.mp3)" autoplay="true" loop="true" position="0 2 2" scale="1 1 1" rotation="0 0 0"></a-sound>
 
 <!--  Texto -->
-<a-text value="Tierra" color="green" position="25.145 3.22 -18.53" scale="22 22 22" rotation="0 -90 0"></a-text>
+<a-text value="Es real." color="#d5dbdb" position="25.145 3.22 -18.53" scale="22 22 22" rotation="0 -90 0"></a-text>
 
 <!-- Animacion de: box,plane,cylinder,sphere -->
 <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
